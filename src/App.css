@@ -1,38 +1,179 @@
-.App {
-  text-align: center;
-}
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
-}
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.opo{
+  background-image: url(../src/Image/dddp.gif);
+  background-size: cover;
+  background-position: center;
+  height: 96vh;
+  overflow-y: hidden !important;
 }
-
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
+.main-container {
   display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
+}
+
+.side-card {
+  width: 20%;
+  height: 30%;
+  background-color: #1e1e1e;
   color: white;
+  display: flex;
+  align-items: flex-start;
+  justify-content: flex-start;
+  flex-direction: column;
+  padding: 20px;
 }
 
-.App-link {
-  color: #61dafb;
+.icon-text {
+  display: flex;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.home-icon, .search-icon {
+  font-size: 20px;
+  margin-right: 10px;
+}
+
+.home-text, .search-input {
+  font-size: 20px;
+  font-weight: 600;
+}
+
+.search-container {
+  display: flex;
+  align-items: center;
+  background-color: #1e1e1e;
+  padding: 10px;
+  border-radius: 10px;
+  width: 100%;
+}
+
+.search-input {
+  background: none;
+  border: none;
+  outline: none;
+  color: white;
+  font-size: 16px;
+  width: 100%;
+}
+
+.music-container {
+  width: 80%;
+  display: grid;
+  grid-template-columns: repeat(5, 1fr);
+  gap: 10px;
+  padding: 20px;
+  border: none;
+  background-color: #1e1e1e;
+}
+
+.spinner-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+  height: 100vh;
+}
+
+.card {
+  background-color: #333;
+  padding: 10px;
+  border-radius: 10px;
+  cursor: pointer;
+  /* border: 2px solid red; */
+  transition: transform 0.2s;
+  height: 70%;
+  margin-top: 100px;
+}
+
+
+.card-image {
+  width: 100%;
+  height: 70%;
+}
+
+
+.img-header {
+  color: whitesmoke;
+  font-size: 15px; 
+  font-weight:bolder;
+}
+
+.img-content {
+  color: rgb(121, 114, 114);
+  font-size: 15px; 
+  margin-top: -10px;
+}
+.footer {
+  position: absolute;
+  background-color: #1b1a1a;
+  color: white;
+  text-align: left;
+  padding: 1em 1em;
+  width: 80%;
+  margin-left:270px;
+  margin-top: -30px;
+}
+
+.footer-top {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 1em;
+}
+
+.footer-section h4 {
+  font-size: 1.2em;
+  margin-bottom: 0.5em;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section ul li {
+  margin-bottom: 0.5em;
+}
+
+.footer-section ul li a {
+  color: rgb(121, 114, 114);
+  text-decoration: none;
+}
+
+.footer-section ul li a:hover {
+  text-decoration: underline;
+}
+
+.footer-bottom  {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  border-top: 1px solid #444;
+  padding-top: 1em;
+  margin-top: 1em;
+}
+.footer-bottom, a{
+  text-decoration: none;
+  color: rgb(121, 114, 114);
+  font-size: 15px;
+
+}
+.social-icons {
+  display: flex;
+  gap: 1em;
+}
+
+.social-icons a {
+  color: rgb(121, 114, 114);
+  font-size: 1em;
+  text-decoration: none;
+}
+
+.footer-bottom p {
+  margin: 0;
 }
